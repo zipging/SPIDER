@@ -7,12 +7,12 @@
 
 ## Outline
 <p align="justify">
-  Overview of CoreST. (<strong>A</strong>}) CoreST learns distributed gene representations, termed CoreST-generated representations (CGRs), from genomic contexts formed by cofunctional genes to detect spatial gene expression patterns, including spatially co-expressed genes (SCGs), spatially variable genes (SVGs), and spatially patterned genes (SPGs). (<strong>B</strong>) Collaborative generation of CGRs and identification of SCGs. This process involves three modules: <em>Module I</em> uses an adapted MAE to learn gene image representations. \textit{Module II} models CGRs with a Student’s t mixture model to generate cofunctional gene groups, whose parameters estimated via MAP-EM. <em>Module III</em> refines representations generation and clustering results through a self-paced pseudo-contrastive learning task, while updating the parameters of MAE and SMM. (<strong>C</strong>) Spatially variable gene detection. 
+  Overview of CoreST. (<strong>A</strong>) CoreST learns distributed gene representations, termed CoreST-generated representations (CGRs), from genomic contexts formed by cofunctional genes to detect spatial gene expression patterns, including spatially co-expressed genes (SCGs), spatially variable genes (SVGs), and spatially patterned genes (SPGs). (<strong>B</strong>) Collaborative generation of CGRs and identification of SCGs. This process involves three modules: <em>Module I</em> uses an adapted MAE to learn gene image representations. \textit{Module II} models CGRs with a Student’s t mixture model to generate cofunctional gene groups, whose parameters estimated via MAP-EM. <em>Module III</em> refines representations generation and clustering results through a self-paced pseudo-contrastive learning task, while updating the parameters of MAE and SMM. (<strong>C</strong>) Spatially variable gene detection. 
   CoreST estimates gene-specific NB or ZINB parameters for each real gene to simulate a counterpart gene with homogeneous expression. The dissimilarity between the CGR of the real and simulated gene is calculated as the spatial variability score, which is then used to rank all genes. (<strong>D</strong>) Spatially patterned detection. NB distribution parameters are estimated from designated spatial pattern and used to simulate a gene with that pattern. Subsequently, <em>Moduel I</em> of SCG detection converts both real and simulated genes into CGRs, identifying the real gene with the CGR most similar to that of the simulated gene as the SPG.
 </p>
 
 <p align="center">
-  <img src="" width="800">
+  <img src="https://github.com/user-attachments/assets/4077ff0e-0273-4193-ab38-22b588a42284">
 </p
 
 ## Dependencies
@@ -33,7 +33,7 @@
 You can download the package from GitHub and install it locally:
 ```bash
 git clone https://github.com/WLatSunLab/CoreST.git
-cd SIGEL/
+cd CoreST/
 python3 setup.py install
 ```
 
