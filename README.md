@@ -60,8 +60,11 @@ CoreST offers a variety of functionalities, including but not limited to:
 - Detecting genes with spatial expression patterns.
 
   -Co-expression genes
+  
   -Spatial variability genes detection
+  
   -Designated expression patterns across specific tissue regions
+  
 
 
 
