@@ -10,7 +10,7 @@ import torch.nn.functional as F
 from torch.nn.parameter import Parameter
 from torch.optim import Adam
 from torch.utils.data import DataLoader
-from src.CoreST.LH import likelihood, regularization, size
+from src.SPIDER.LH import likelihood, regularization, size
 from torch.nn import Linear
 
 

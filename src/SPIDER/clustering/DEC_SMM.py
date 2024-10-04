@@ -363,6 +363,6 @@ def DEC(model, dataset, config):
     #y_pred_last = torch.argmax(xi_i_k, dim=1).cpu().numpy()  
     Theta_prev, clusters, xi_i_k_history = EM_algorithm(z, K, Theta_prev, alpha0_hat, m0_hat, kappa0_hat, S0_hat, rho0_hat, clusters,max_iterations=0, config=config, tol=5 * 1e-3)
     y_pred_last = clusters
-    torch.save(model.state_dict(), f"model_pretrained/CoreST.pkl")
+    torch.save(model.state_dict(), f"model_pretrained/SPIDER.pkl")
     
     return z, model

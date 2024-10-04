@@ -20,14 +20,14 @@ total: gene similarity matrix with size [N, N]
 
 What you will get return
 model: encoder that haved been trained
-y_pred: label that CoreST generative
+y_pred: label that SPIDER generative
 embedding: embedding that generatived by encoder
 
 Others
 If you wanna get other return such as x_bar or parameters of SMM, just rewrite DEC to get what you want.
 '''
 
-class CoreST():
+class SPIDER():
     # please choose the 151676 for testing
     def get_data(sample_id, data_type='image'):
         assert sample_id == '151676', "please choose the 151676 for testing"
