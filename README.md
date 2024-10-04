@@ -35,7 +35,6 @@ You can download the package from GitHub and install it locally:
 ```bash
 git clone https://github.com/WLatSunLab/SPIDER.git
 cd SPIDER/
-python3 setup.py install
 ```
 
 ## Sample data
